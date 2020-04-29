@@ -235,7 +235,7 @@ Under **Network** select the VPC, Subnet, and Security Group that you have creat
 
 Then create the notebook. This will take a couple of minutes while SageMaker provisions the environment for your notebook.
 
-<img src="./images/16.png" height="250">
+<img src="./images/16.png" height="300">
 
 Wait until the status of your SageMaker instance changes to "In Service" in green.
 
