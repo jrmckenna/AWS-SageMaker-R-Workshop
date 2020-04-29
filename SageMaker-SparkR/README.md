@@ -28,8 +28,8 @@ Once you have followed these steps, you can visit the example notebook in this r
   - [Set Up Virtual Private Cloud (VPC)](#Set-Up-Virtual-Private-Cloud-(VPC))
   - [Create an EMR Cluster with Livy Application](#Create-an-EMR-Cluster-with-Livy-Application)
     - [Upload Bash Transcripts to S3](#Upload-Bash-Transcripts-to-S3)
-    - [Create an EMR Cluster: Method 1 AWS EMR Console](#Create-an-EMR-Cluster:-Method-1-AWS-EMR-Console)
-    - [(Alternative Method) Create an EMR cluster: Method 2 AWS CLI](#(Alternative-Method)-Create-an-EMR-Cluster:-Method-2-AWS-CLI)
+    - [Create an EMR Cluster: AWS EMR Console](#Create-an-EMR-Cluster:-AWS-EMR-Console)
+    - [Create an EMR Cluster: Alternative Method-AWS CLI](#Create-an-EMR-Cluster:-Alternative-Method-AWS-CLI)
   - [Set Up Security Groups and Open Ports](#Set-Up-Security-Groups-and-Open-Ports)
   - [Set Up A SageMaker Notebook Instance](#Set-Up-A-SageMaker-Notebook-Instance)
   - [Connect the SageMaker Instance to Amazon EMR](#Connect-the-SageMaker-Instance-to-Amazon-EMR)
@@ -97,7 +97,7 @@ This file also sets the username/password for RStudio, but using SageMaker, we w
 
 - Create a S3 bucket and upload these two `.sh` files in that bucket (/subfolder).
 
-##### Create an EMR Cluster: Method 1 AWS EMR Console
+##### Create an EMR Cluster: AWS EMR Console
 We will create an EMR cluster with one master node and four core nodes that will have the following applications:
 - Hadoop 2.8.5
 - Hive 2.3.6
@@ -159,7 +159,7 @@ Choose your Master’s ID, and then scroll right to find **Private IP** Address.
 <img src="./images/11.png">
 <img src="./images/12.png" width="100" height="75">
 
-##### (Alternative Method) Create an EMR Cluster: Method 2 AWS CLI
+##### Create an EMR Cluster: (Alternative Method) AWS CLI
 Alternatively, you can use AWS CLI to create the EMR cluster. For this, you can visit this example on [AWS GitHub repo for EMR Bootstrap Actions for R](https://github.com/aws-samples/emr-bootstrap-actions/blob/master/R/Hadoop/README.md) and revise the command for your case.
 
 Here's the command from this [AWS GitHub repo](https://github.com/aws-samples/emr-bootstrap-actions/blob/master/R/Hadoop/README.md) as a sample without modification. Note this command installs rstudio, rhdfs, plyrmr, and rexamples packages on the cluster, and creates a cluster with 3 nodes, one master and two cores.
