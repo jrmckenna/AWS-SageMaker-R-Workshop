@@ -1,6 +1,6 @@
 # Amazon SageMaker + R + Spark Workshop
 <p align="center">
-<img src="./images/title.png" height="150">
+<img src="./images/Title.png" height="150">
 
 </p>
 
