@@ -1,9 +1,7 @@
 
 # Amazon SageMaker + R Workshop
 <p align="center">
-<img src="https://d2908q01vomqb2.cloudfront.net/77de68daecd823babbb58edb1c8e14d7106e83bb/2018/04/24/SageMaker.jpg" width="200" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Plus_font_awesome.svg/512px-Plus_font_awesome.svg.png" width="50" height="50"/>
-<img src="https://cran.r-project.org/Rlogo.svg" width="200" height="100"/>
+<img src="./images/r-title.png">
 </p>
 
 ---

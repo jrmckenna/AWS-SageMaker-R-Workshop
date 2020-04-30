@@ -1,9 +1,7 @@
 # Running RStudio on EC2 Instance
 
 <p align="center">
-<img src="https://d1.awsstatic.com/icons/Page-Illo_EC2%20Overviews%20and%20Features_Choice%20of%20Processors.978fd9a10d0d895ed004b3bfc00fc8aad9a0812b.png" width="200" height="100"/> &nbsp;
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Plus_font_awesome.svg/512px-Plus_font_awesome.svg.png" width="50" height="50"/>&nbsp;&nbsp;
-<img src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo.png" width="300" height="100"/>
+<img src="../images/ec2-rstudio.png">
 </p>
 
 
