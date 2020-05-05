@@ -1,4 +1,4 @@
-# Amazon SageMaker + R + Spark Workshop
+# Using Spark EMR Clusters in SageMaker with R Kernel
 <p align="center">
 <img src="./images/Title.png">
 
