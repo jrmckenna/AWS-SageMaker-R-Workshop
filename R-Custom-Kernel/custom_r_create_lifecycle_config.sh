@@ -12,4 +12,5 @@ unzip ~/SageMaker/custom_r.zip -d ~/SageMaker/
 mv ~/SageMaker/home/ec2-user/SageMaker/envs/ ~/SageMaker/envs
 rm -rf ~/SageMaker/home/
 rm ~/SageMaker/custom_r.zip
+
 EOF

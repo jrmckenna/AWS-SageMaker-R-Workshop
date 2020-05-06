@@ -69,7 +69,7 @@ You can visit [https://anaconda.org/](https://anaconda.org/) and search for the 
 
 </p>
 
-Using Anaconda is the preferred method as it provides access to the most stable versions for Conda environment.
+**The recommendation** is to **use conda** as the preferred method to install packages and Anaconda as the preferred archive, as it provides access to the most stable versions for conda environments.
 
 #### Install from CRAN Archive
 The next method is using CRAN archive. The Comprehensive R Archive Network (CRAN) [https://cran.r-project.org/](https://cran.r-project.org/) is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R. You can use this archive to install packages in R, using `install.packages()`. This will install the latest version of the package.
@@ -84,6 +84,21 @@ then you can import that package to your R code by:
 ```
 library(mlbench)
 ```
+You should keep in mind that SageMaker instances use [Amazon Linux AMI](https://aws.amazon.com/amazon-linux-ami/) which is a distribution that evolved from Red Hat Enterprise Linux (RHEL) and CentOS. It is available for use within Amazon EC2 instances that run SageMaker. Therefore, if you are planning to install packages directly from the source, make sure you select the right operating system. You can check the operating system with the following command in the SageMaker terminal:
+
+```
+sh-4.2$ cat /etc/os-release
+
+NAME="Amazon Linux AMI"
+VERSION="2018.03"
+ID="amzn"
+ID_LIKE="rhel fedora"
+VERSION_ID="2018.03"
+PRETTY_NAME="Amazon Linux AMI 2018.03"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:/o:amazon:linux:2018.03:ga"
+HOME_URL="http://aws.amazon.com/amazon-linux-ami/"
+```
 
 #### Install Directly from Github
 You can also use `devtools` and `install_github` to get the content directly from the package developer's repo. For this you can follow this code:
@@ -94,7 +109,7 @@ devtools::install_github("malcolmbarrett/ggdag")
 This will install the package and its dependencies.
 
 ### Sample Code for Installing R Packages
-The sample code in this current repo illustrates how installing packages from different sources can be achieved. You can copy and paste this code in a SageMaker notebook with R Kernel, and customize it based on the packages you want to install. Running this sample code will take a long time due to the size and number of packages it installs. 
+The sample code in this current repo illustrates how installing packages from different sources can be achieved. You can copy and paste this code in a SageMaker notebook with R Kernel, and customize it based on the packages you want to install. Running this sample code will take a long time due to the size and number of packages it installs.
 
 [Sample Code for Installing R Packages](.sample_installing_r_packages.R)
 
