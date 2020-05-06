@@ -1,5 +1,5 @@
 
-# Amazon SageMaker + R Workshop
+# Using R in SageMaker
 <p align="center">
 <img src="./images/r-title.png">
 </p>
@@ -26,7 +26,11 @@ This GitHub repository provides examples of coding in R in SageMaker environment
 4. [Hyperparameter Optimization for XGBoost in R and Batch Transform](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R_XGBoost_HPO_Batch_Transform)
   This sample Notebook describes how to conduct Hyperparamter tuning and batch transform to make predictions for abalone age as measured by the number of rings in the shell. The notebook will use the public abalone dataset hosted by UCI Machine Learning Repository.
 
-5. [Using Spark EMR Clusters in SageMaker with R Kernel](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/SageMaker-SparkR) The purpose of this example is to demonstrate how SageMaker notebook with R kernel can be connected to an EMR cluster using SparklyR package to process Spark job including data processing, SQL queries, Machine Learning, and data read/write in different formats. The example uses `iris`, `abalone`, and `mtcars` public datasets.
+5. [Using Spark EMR Clusters in SageMaker with R Kernel](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/SageMaker-SparkR)
+  The purpose of this example is to demonstrate how SageMaker notebook with R kernel can be connected to an EMR cluster using SparklyR package to process Spark job including data processing, SQL queries, Machine Learning, and data read/write in different formats. The example uses `iris`, `abalone`, and `mtcars` public datasets.
+
+5. [Creating a Persistent Custom R Environment for SageMaker](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-Custom-Kernel)
+  The instructions outlined in this example will walk you through the steps to create a custom R environment with user-specific packages for Amazon SageMaker, and make the environment persistent between sessions, and also to use the environment in creating new SageMaker instances.
 
 These examples utilize two libraries that provide R interfaces for AWS SageMaker and AWS services:
 
