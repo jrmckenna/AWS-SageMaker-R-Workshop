@@ -8,7 +8,7 @@
 #!/bin/bash
 sudo -u ec2-user -i <<'EOF'
 ln -s /home/ec2-user/SageMaker/envs/custom-r /home/ec2-user/anaconda3/envs/custom-r
-sudo ln -s /home/ec2-user/anaconda3/envs/R/lib/R/modules/lapack.so /home/ec2-user/anaconda3/envs/R/lib/libRlapack.so
+
 EOF
 echo "Restarting the Jupyter server.."
 restart jupyter-server
