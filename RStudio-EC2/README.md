@@ -62,6 +62,17 @@ To run RStudio on EC2 Instance, follow these steps:
 
 3) Once in RStudio, run this line in the RStudio console to install `r-reticulate` environment and `sagemaker-python-sdk` package:
 
-`conda_install(envname = "r-reticulate", packages="sagemaker-python-sdk")`
+```
+# Import reticulate library to interact with python
+library(reticulate)
+
+# Install miniconda environment
+install_miniconda()
+
+# conda install SageMaker Python SDK, that includes sagemaker library
+conda_install(envname = "r-reticulate", packages="sagemaker-python-sdk")
+```
 
 4) Copy and paste the code from [`r-sample.R`](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/blob/master/RStudio-EC2/r_sample.R) into RStudio, and run the code.
+
+**You are all set!**

@@ -9,8 +9,11 @@ Python objects, and Amazon SageMaker provides a serverless data science environm
 to train and deploy ML models at scale.
 "
 
-# Import reticulate library before conda_install
+# Import reticulate library
 library(reticulate)
+
+# Install miniconda environment before conda_install
+install_miniconda()
 
 # Install packages
 conda_install(envname = "r-reticulate", packages="sagemaker-python-sdk")
