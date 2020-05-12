@@ -15,7 +15,6 @@ To run RStudio on EC2 Instance, follow these steps:
 
   **Note:** You will need to save the key-pair locally on your machine in a secure location.
  
-
 - Use the following AWS CloudFormation stack to install, configure, and connect to RStudio on an Amazon Elastic Compute Cloud (Amazon EC2) instance with Amazon SageMaker. Running this step might take about 10 mins to complete:
 
   - [CloudFormation Stack](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=rstudio-sagemaker&templateURL=https://s3.amazonaws.com/aws-ml-blog/artifacts/build-sagemaker-models-with-r/rstudio_sagemaker.yaml)
