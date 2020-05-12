@@ -14,6 +14,7 @@ To run RStudio on EC2 Instance, follow these steps:
 - You will need a set of key-pair for creating the CloudFormation stack and also logging into the EC2 instance once created. Follow the instructions provided in [Amazon EC2 key pairs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) to create the Key-Pair.
 
   **Note:** You will need to save the key-pair locally on your machine in a secure location.
+ 
 
 - Use the following AWS CloudFormation stack to install, configure, and connect to RStudio on an Amazon Elastic Compute Cloud (Amazon EC2) instance with Amazon SageMaker. Running this step might take about 10 mins to complete:
 
@@ -50,6 +51,8 @@ To run RStudio on EC2 Instance, follow these steps:
 - Once logged into the EC2 instance and while it is running, open a browser, and type: `http://localhost:8787/`
 
   **Note:** You might see connect failed messages in your terminal while RStudio and the required R packages are installing. The installation process takes approximately 15 minutes.
+  
+   **Note:** If you receive an error  "bind: Address already in use" when running the SSH link and/or the message "Error: Incorrect or invalid username/password", you may need to uninstall your local version of RStudio Server.
 
   Sign in with the following credentials:
 
