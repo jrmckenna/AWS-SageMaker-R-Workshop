@@ -17,22 +17,25 @@ This GitHub repository provides examples of coding in R in SageMaker environment
 1. [Running RStudio on EC2 Instance](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/RStudio-EC2)
   This example explains how to run a CloudFormation stack to provision an EC2 Instance with all necessary resources to run RStudio.
 
-2. [Using R Kernel in SageMaker Notebook Instance](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-Kernel)
+2. [Using R Kernel in SageMaker Notebook Instances: Basic Hello World Example](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R_SageMaker_Hello_World)
+  This is a simple example for writing R script in SageMaker, downloading data, processing and visualizing data, and then storing the data to S3.
+
+3. [Using R Kernel in SageMaker Notebook Instance: End-2-End Example](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-End-2-End)
   This sample Notebook describes how to train, deploy, and retrieve predictions from a machine learning (ML) model using Amazon SageMaker and R. The model predicts abalone age as measured by the number of rings in the shell. The reticulate package will be used as an R interface to Amazon SageMaker Python SDK to make API calls to Amazon SageMaker. The reticulate package translates between R and Python objects, and Amazon SageMaker provides a serverless data science environment to train and deploy ML models at scale.
 
-3. [SageMaker Batch Transform using R Kernel](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-Batch-Transform)
+4. [SageMaker Batch Transform using R Kernel](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-Batch-Transform)
     This sample Notebook describes how to conduct batch transform using SageMaker Transformer in R. The notebook uses Abalone dataset and XGBoost regressor algorithm.
 
-4. [Bring Your Own R Algorithm to SageMaker](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R_BYO_Algo)
+5. [Bring Your Own R Algorithm to SageMaker](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R_BYO_Algo)
   This notebook will focus mainly on the integration of hyperparameter tuning and a custom algorithm container, as well as hosting the tuned model and making inference using the endpoint.
 
-4. [Hyperparameter Optimization for XGBoost in R and Batch Transform](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R_XGBoost_HPO_Batch_Transform)
+6. [Hyperparameter Optimization for XGBoost in R and Batch Transform](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R_XGBoost_HPO_Batch_Transform)
   This sample Notebook describes how to conduct Hyperparamter tuning and batch transform to make predictions for abalone age as measured by the number of rings in the shell. The notebook will use the public abalone dataset hosted by UCI Machine Learning Repository.
 
-6. [Using Spark EMR Clusters in SageMaker with R Kernel](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/SageMaker-SparkR)
+7. [Using Spark EMR Clusters in SageMaker with R Kernel](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/SageMaker-SparkR)
   The purpose of this example is to demonstrate how SageMaker notebook with R kernel can be connected to an EMR cluster using SparklyR package to process Spark job including data processing, SQL queries, Machine Learning, and data read/write in different formats. The example uses `iris`, `abalone`, and `mtcars` public datasets.
 
-7. [Creating a Persistent Custom R Environment for SageMaker](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-Custom-Kernel)
+8. [Creating a Persistent Custom R Environment for SageMaker](https://github.com/nickminaie/AWS-SageMaker-R-Workshop/tree/master/R-Custom-Kernel)
   The instructions outlined in this example will walk you through the steps to create a custom R environment with user-specific packages for Amazon SageMaker, and make the environment persistent between sessions, and also to use the environment in creating new SageMaker instances.
 
 These examples utilize two libraries that provide R interfaces for AWS SageMaker and AWS services:
